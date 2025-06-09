@@ -1,0 +1,37 @@
+accessKeyId    :  AKIAV6Q7SD4FAEUE4CS2
+secretKeyId    :  PSmXVKWYllyDl8UQWT8tjmGyj7q8ca8+mHlpi4fz
+clientId   :  
+topic  :  deviceId/PUB   ,  deviceId/SUB
+payload  :  
+{
+  "deviceId": "gowtham",
+  "device1": 1,
+  "device2": 0,
+  "device3": 0,
+  "device4": 1,
+  "device5": 0,
+  "sliderValue": 0,
+  "deviceStatus": "Online"
+}
+
+
+1. Aws endpoint  :   a100lbt6wc6hi2-ats.iot.us-east-1.amazonaws.com
+2. Policy name     :   QUB_Policy
+3. Certificate id    :   b075725341a54d2c9eacaff4c82c55f28f0a8b7315de77cca3116f1182ff34c1
+4. Region             :   US East (N. Virginia)     us-east-1
+
+
+// Initialize the Amazon Cognito credentials provider
+CognitoCachingCredentialsProvider credentialsProvider = new CognitoCachingCredentialsProvider(
+    getApplicationContext(),
+    "us-east-1:321115cd-a5d0-47ce-9f02-38c90e59425e", // Identity pool ID
+    Regions.US_EAST_1 // Region
+);
+
+
+
+References //
+https://docs.aws.amazon.com/amplify/?id=docs_gateway
+
+
+
